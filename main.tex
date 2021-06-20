@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper,uplatex,dvipdfmx]{jsarticle}
+\usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{mathcomp}
+\usepackage{comment}
+\usepackage{diagbox}
+\usepackage{url}
+\usepackage{array}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{graphicx,color}
+\usepackage{svg}
+\usepackage{amssymb}
+\usepackage{slashbox}
+
+
+
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\rhead{\thepage{}}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcolumntype{Y}{&gt;{\centering\arraybackslash}X} %中央揃え
+\makeatletter
+\newcommand{\subsubsubsection}{\@startsection{paragraph}{4}{\z@}%
+  {1.0\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+  {.1\Cvs \@plus.3\Cdp}%
+  {\reset@font\sffamily\normalsize}
+}
+\renewcommand{\refname}{}
+\makeatother
+\setcounter{section}{0}
+\setcounter{secnumdepth}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% イントロ
+\include{Intro/intro.tex}
+
+% 実験1
+  \include{Contents/jikken1.tex}
+
+% 実験2
+\include{Contents/jikken2.tex}
+
+% 実験3
+\include{Contents/jikken3.tex}
+
+% 実験4
+\include{Contents/jikken4.tex}
+
+%検討事項
+\include{Kentou/kentou.tex}
+
+%考察
+\include{Kousatu/kousatu.tex}
+
+%参考文献
+\include{Reference/reference.tex}
+
+\end{document}
